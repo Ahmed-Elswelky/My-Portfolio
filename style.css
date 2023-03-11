@@ -146,7 +146,7 @@ header {
 }
 
 .cards .content .card {
-    width: 25%;
+    width: 20em;
     min-height: 20em;
     margin: 20px;
     box-shadow: 0 5px 10px black;
@@ -296,7 +296,7 @@ font-size: 1em;
 
 /* contant */
 .contact .content .card {
-    min-width: 26em;
+    min-width: 20em;
     min-height: 10em;
 }
 .contact  .title{
@@ -311,7 +311,7 @@ font-size: 1em;
 .contact a {
     text-decoration: none;
     color: rgb(58, 58, 163);
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 500;
     margin-top: 50px;
     display: inline-block;
@@ -390,87 +390,57 @@ font-size: 1em;
     font-size: 1.5em;
 }
 
-
-/* media */
-@media (max-width:1023px){
-    /* header */
+@media only screen and (max-width: 768px), only screen and (max-width: 1024px){
     header {
-        padding: 12px 20px;
-    }
-    .navigation a {
-        padding-left: 10em;
-        font-size: 1em;
-
-    }
-    .title {
-        font-size: 1.5em;
+        padding:10px 50px ;
     }
 
-    .logo{
-        font-size: 1.2em;
-
+    .navigation {
+        display: none;
     }
-
-    /* main */
     .main {
-        padding: 20px 20px;
+        padding: 150px 50px;
+        flex-direction: column;
     }
-    .main h2 span {
-        font-size: 1.5em;
-        
-    }
-    .main h2,h3 {
-        font-size: 1em;
 
-    }
-    .main-btn {
-        margin: 25px 0px;
-    }
+    .main img {
+        display: none;    }
+
     .main .social-icons {
-        margin-left: 5px;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contact a {
+    font-size: 1em;
+}
+
+
+    .projects {
+            padding: 50px 10px ;
 
     }
-    
-    /* cards */
-.cards .content .card { 
-        width: 50%;
-    }
-    .content {
+    .projects-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
     }
-
-    /* Projects */
-    .projects {
-        padding: 10px 50px;
-    }
-    .projects-cards{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-    /* contact */
-        .contact .content .card {
-            min-width: 26em;
-            padding: 0 10px;
-            margin: 10px 10px;
-        }
-
-        /* footer */
-    .footer {
-            padding: 10px;
-    }
-        .footer p {
-            font-size: 1em;
-            font-weight: 300;
     
-        }
-        .footer p span {
-                font-size: 1.1em;
-        }
-
-
-
 }
+
+
+
+
+
